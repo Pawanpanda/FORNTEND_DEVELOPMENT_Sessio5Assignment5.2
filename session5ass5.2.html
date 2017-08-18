@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>vowel or consonant</h2>
+
+
+<p>enter your word::</p>
+<input id="x" value="" />
+<button onclick="isVowel()">click here</button>
+<script>
+function isVowel(){
+   var result,x;
+   x = document.getElementById("x").value;
+        if(x == "A" || x == "E" || x == "I" || x == "O" || x == "U" ||x == "a" || x == "e" || x == "i" || x == "o" || x == "u")
+		{
+            result = "It is a vowel****";
+        }
+        else{
+            result = "It is a consonant";
+        }
+	document.getElementById("demo").innerHTML = result;
+	}
+</script>
+<p id="demo"></p>
+
+</body>
+</html>
